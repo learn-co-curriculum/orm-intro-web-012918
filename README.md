@@ -1,12 +1,33 @@
-## Active Record Pattern
-
-
 ## Object Relational Mapper (ORM)
+- mapping database rows to ruby objects
+- class relates to a table
+- row of data one ruby instance
+- database column equivalent to property/attribute of ruby instance
 
 
 ## CRUD REVIEW
 
 What are the four ways we can interact with data?
+
+CREATE
+get info from cli application
+save info to the database
+after saving, create new instance of tweet
+
+READ
+read by id
+read all elements out of the database
+read the last record out of the database
+
+UPDATE
+on an instance
+update the database with argument
+
+DELETE/DESTROY
+instance method
+sql call to destroy
+
+
 
 
 ## Domain Modeling and SQL Review
@@ -68,8 +89,8 @@ belongs to a tag
 
 Q: Write the SQL to find all the tweets tagged '#tbt'
 SELECT * from tweets
-JOIN tweet_tags on tweets.id = tweet_tags.tweet_id
-JOIN tags on tags.id = tweet_tags.tag_id
+JOIN tweet_tags ON tweets.id = tweet_tags.tweet_id
+JOIN tags ON tags.id = tweet_tags.tag_id
 WHERE tags.text = "tbt"
 
 4. After completing the questions above, is there a rule you can determine about which table the foreign key belongs on given two associated tables?
