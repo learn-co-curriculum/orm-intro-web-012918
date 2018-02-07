@@ -1,3 +1,13 @@
+## Dynamic ORM
+- Build a parent class that our models can inherit from
+- This class should set up the connection to the database, by inheriting from this class our model will have a connection to the db
+- All of the behavior that is specific to communicating with the db, will be encapsulated in this parent class
+
+
+## ActiveRecord Pattern
+- One row in our database is represented by one object
+- each column in the db represents one property of an object
+
 ## Object Relational Mapper (ORM)
 - mapping database rows to ruby objects
 - class relates to a table
